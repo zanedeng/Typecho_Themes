@@ -1,5 +1,4 @@
-# Typecho_Themes
-Typecho模板
+# Typecho模板
 
 
 # zc-s模板截图
