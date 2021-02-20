@@ -11,7 +11,7 @@ function themeConfig($form) {
 	$favicon = new Typecho_Widget_Helper_Form_Element_Text('favicon', null, null, _t('Favicon 地址'), _t('博客 Favicon 的地址, 默认则使用主题自带'));
     $form->addInput($favicon);
 	//Logo
-    $logoUrl = new Typecho_Widget_Helper_Form_Element_Text('logoUrl', NULL, NULL, _t('站点Logo地址'), _t('Logo图片URL地址, 推荐218x68, 默认则使用主题自带'));
+    $logoUrl = new Typecho_Widget_Helper_Form_Element_Text('logoUrl', NULL, NULL, _t('站点Logo地址'), _t('Logo图片URL地址, 推荐250x60, 默认则使用主题自带'));
 	$form->addInput($logoUrl->addRule('xssCheck', _t('请不要在图片链接中使用特殊字符')));
 	
 	//社交

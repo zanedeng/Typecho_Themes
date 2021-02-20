@@ -138,7 +138,7 @@ $this->need('header.php');
 									<div class="absolute">
 										<p><?php $this->excerpt(90, '...'); ?></p>
 										<div class="icon d-flex align-items-center mb-4">
-											<?php echo $this->author->gravatar('60', '', true); ?>
+											<?php echo $this->author->gravatar('150', '', true); ?>
 											<div class="position pl-3">
 												<h4 class="mb-0"><?php $this->author(); ?></h4>
 												<span><?php $this->date('Y-m-d'); ?></span>
@@ -170,7 +170,7 @@ $this->need('header.php');
 										<p><?php $this->excerpt(90, '...'); ?></p>
 										<div class="d-flex w-100">
 											<div class="icon d-flex align-items-center ml-md-auto mb-4">
-												<?php echo $this->author->gravatar('60', '', true); ?>
+												<?php echo $this->author->gravatar('150', '', true); ?>
 												<div class="position pl-3 text-left">
 													<h4 class="mb-0"><?php $this->author(); ?></h4>
 													<span><?php $this->date('Y-m-d'); ?></span>

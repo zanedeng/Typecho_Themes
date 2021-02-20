@@ -9,11 +9,9 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 text-center">
-				<p>
-					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-					Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://zanejs.com" target="_blank">zane.deng</a>
-					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-				</p>
+				<p>版权所有 <script>document.write(new Date().getFullYear());</script>&copy;广州筑宸数码科技有限公司 All rights reserved</p>
+				<p>This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://zanejs.com" target="_blank">zane</a></p>
+				<p><a href="http://beian.miit.gov.cn" target="_blank">粤ICP备2020130837号</a></p>
 			</div>
 		</div>
 	</footer>
