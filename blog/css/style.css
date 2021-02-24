@@ -1420,11 +1420,15 @@ h1 {
     .date-outer.col-md-4.col-sm-4 {
     padding: 5px;
     }
+    .blog.section-padding {
+        padding:100px 0;
+        overflow: hidden;
+    }
     .blog .item {
     -webkit-box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.1);
     box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.1);
     position: relative;
-    border-radius: 4px;
+    border: 1px solid rgb(255, 255, 255, 0.2);
     overflow: hidden;
     }
     .blog .item:hover img {
@@ -1799,3 +1803,72 @@ h1 {
     [ End Loadmore Loader ]
     -----------------------------------------------------------------*/
     
+    body#layout{
+        background-color:#F7F7F7
+    }
+
+    body#layout ul,body#layout li{
+        list-style:none;
+        padding:0
+    }
+    body#layout .editlink{
+        border: 1px solid;
+        border-radius: 2px;
+        padding: 5px 10px!important;
+        line-height: normal;
+        border-color: #7f9acc !important;
+        color: #4e4e4d !important;
+        background: #ffffff!important;
+    }
+    body#layout .header-content{
+        margin:20px 0 35px
+    }
+    body#layout div#header-social{
+        width:34%;
+        display:inline-block
+    }
+    body#layout .section h4{
+        background:#4e4e4d;
+        color:#fff;
+        padding:15px;
+        margin:0;
+        text-transform:capitalize
+    }
+    body#layout div#content{
+        width:55%;
+        z-index:99;
+        float:left
+    }
+    body#layout div#sidebar{
+        width:34%;
+        display:inline-block
+    }
+    body#layout footer{
+        width:100%;
+        display:inline-block
+    }
+    body#layout .content-wrapper:before{
+        content:"Content Area";
+        background:#4e4e4d;
+        width:100%;
+        display:block;
+        background:#4e4e4d;
+        padding:20px 0;
+        color:#fff;
+        font-family:sans-serif;
+        z-index:999999;
+        font-weight:700;
+        position:relative;
+        top:-25px
+    }
+    body#layout ul li {
+        display: none;
+    }
+    body#layout div#numbers , 
+    body#layout section#services , 
+    body#layout section#clients , 
+    body#layout div#bs-example-navbar-collapse-1 , 
+    body#layout section#contact{
+        display:none;
+    }
+    .sidebar-wrapper { display:none; }

@@ -179,7 +179,7 @@ $this->need('header.php');
                                                                     <a href="<?php $this->permalink(); ?>" class="undecro"><?php $this->title(26); ?></a>
                                                                 </h5>
                                                                 <a href="<?php $this->permalink(); ?>" class="more mt-30">
-                                                                    <span>继续阅读</span>
+                                                                    <span>阅读全文</span>
                                                                 </a>
                                                             </div>
                                                         </div>

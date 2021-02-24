@@ -54,6 +54,9 @@
 	    <link rel="stylesheet" href="<?php $this->options->themeUrl(); ?>css/font-awesome.min.css">
 	    <link rel="stylesheet" href="<?php $this->options->themeUrl(); ?>css/bootstrap-4.0.0.min.css">
 	    <link rel="stylesheet" href="<?php $this->options->themeUrl(); ?>css/style.css">
+        <?php if ($this->is('index')==false) : ?>
+	    <link rel="stylesheet" href="<?php $this->options->themeUrl(); ?>css/blog.css">
+        <?php endif; ?>
         
         <script src='<?php $this->options->themeUrl(); ?>js/jquery-3.0.0.min.js' type='text/javascript'></script>
         <script src='<?php $this->options->themeUrl(); ?>js/jquery-migrate-3.0.0.min.js' type='text/javascript'></script>
@@ -61,71 +64,7 @@
         <?php $this->header(); ?>
 
         <style id='template-skin-1' type='text/css'>
-            body#layout{
-                background-color:#F7F7F7
-            }
-
-            body#layout ul,body#layout li{
-                list-style:none;
-                padding:0
-            }
-            body#layout .editlink{
-                border: 1px solid;
-                border-radius: 2px;
-                padding: 5px 10px!important;
-                line-height: normal;
-                border-color: #7f9acc !important;
-                color: #4e4e4d !important;
-                background: #ffffff!important;
-            }
-            body#layout .header-content{
-                margin:20px 0 35px
-            }
-            body#layout div#header-social{
-                width:34%;
-                display:inline-block
-            }
-            body#layout .section h4{
-                background:#4e4e4d;
-                color:#fff;
-                padding:15px;
-                margin:0;
-                text-transform:capitalize
-            }
-            body#layout div#content{
-                width:55%;
-                z-index:99;
-                float:left
-            }
-            body#layout div#sidebar{
-                width:34%;
-                display:inline-block
-            }
-            body#layout footer{
-                width:100%;
-                display:inline-block
-            }
-            body#layout .content-wrapper:before{
-                content:"Content Area";
-                background:#4e4e4d;
-                width:100%;
-                display:block;
-                background:#4e4e4d;
-                padding:20px 0;
-                color:#fff;
-                font-family:sans-serif;
-                z-index:999999;
-                font-weight:700;
-                position:relative;
-                top:-25px
-            }
-            body#layout ul li {
-                display: none;
-            }
-            body#layout div#numbers , body#layout section#services , body#layout section#clients , body#layout div#bs-example-navbar-collapse-1 , body#layout section#contact{
-                display:none;
-            }
-            .sidebar-wrapper{display:none;}
+            
         </style>
 
         <script type='text/javascript'>
@@ -219,7 +158,7 @@
         <!-- ====== Header ====== -->
         <!-- Header Background -->
         <?php if(empty($this->options->bgUrl)): ?>
-        <header class='jumbo valign bg-img' data-background='<?php $this->options->themeUrl('images/background.jpg'); ?>' data-overlay-dark='4' data-scroll-index='0' id='home'>
+        <header class='jumbo valign bg-img' data-background='<?php $this->options->themeUrl('images/background.jpeg'); ?>' data-overlay-dark='4' data-scroll-index='0' id='home'>
         <?php else: ?>
         <header class='jumbo valign bg-img' data-background='<?php echo $this->options->bgUrl; ?>' data-overlay-dark='4' data-scroll-index='0' id='home'>
         <?php endif; ?>

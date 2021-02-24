@@ -275,5 +275,6 @@
         });
     //]]>
     </script>
+    <?php $this->footer(); ?>
 </body>
 </html>

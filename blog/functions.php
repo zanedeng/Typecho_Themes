@@ -86,7 +86,9 @@ function showThumb($obj,$link=false){
     preg_match_all( "/<[img|IMG].*?src=[\'|\"](.*?)[\'|\"].*?[\/]?>/", $obj->content, $matches );
     $thumb = '';
     $attach = $obj->attachments(1)->attachment; 
-    if (isset($attach->isImage) && $attach->isImage == 1){
+    if (isset($obj->fields->thumbUrl)) {
+        $thumb = $obj->fields->thumbUrl;
+    }elseif (isset($attach->isImage) && $attach->isImage == 1){
         $thumb = $attach->url;   //附件是图片 输出附件
     }elseif(isset($matches[1][0])){
         $thumb = $matches[1][0];  //文章内容中抓到了图片 输出链接
