@@ -5,7 +5,7 @@
  * @package zane-blog
  * @author zane.deng
  * @version 1.0
- * @link zanedeng.github.io
+ * @link https://github.com/zanedeng/Typecho_Themes
  */
 
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;
