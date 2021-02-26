@@ -6,11 +6,9 @@
             <a HREF='/'><h3><?php $this->options->title(); ?></h3></a>
             <!-- Footer Social Links-->
             <div CLASS='social'>
-                <a HREF='#0'><i CLASS='fa fa-facebook'></i></a>
-                <a HREF='#0'><i CLASS='fa fa-twitter'></i></a>
-                <a HREF='#0'><i CLASS='fa fa-instagram'></i></a>
-                <a HREF='#0'><i CLASS='fa fa-linkedin'></i></a>
-                <a HREF='#0'><i CLASS='fa fa-behance'></i></a>
+                <a HREF='<?php echo empty($this->options->socialgithub) ? '#0' : $this->options->socialgithub ?>'><span class="iconfont">&#xe605;</span></a>
+                <a HREF='<?php echo empty($this->options->socialgitee) ? '#0' : $this->options->socialgitee ?>'><span class="iconfont">&#xe604;</span></a>
+                <a HREF='<?php echo empty($this->options->socialcodepen) ? '#0' : $this->options->socialcodepen ?>'><span class="iconfont">&#xe606;</span></a>
             </div>
             <p>Copyright &#169; 2020 zane.</p>
         </div>

@@ -50,7 +50,6 @@
         <meta property="article:modified_time" content="<?php $this->date('Y-m-j'); ?>" />
         <?php endif; ?>
 
-        <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700|Rubik:300,400,500,700,900&subset=latin-ext' rel='stylesheet'/>
 	    <link rel="stylesheet" href="<?php $this->options->themeUrl(); ?>css/font-awesome.min.css">
 	    <link rel="stylesheet" href="<?php $this->options->themeUrl(); ?>css/bootstrap-4.0.0.min.css">
 	    <link rel="stylesheet" href="<?php $this->options->themeUrl(); ?>css/style.css">
@@ -58,6 +57,8 @@
 	    <link rel="stylesheet" href="<?php $this->options->themeUrl(); ?>css/blog.css">
         <?php endif; ?>
         
+        <link rel="stylesheet" href="<?php $this->options->themeUrl(); ?>iconfont/iconfont.css">
+        <script src="<?php $this->options->themeUrl(); ?>iconfont/iconfont.js"></script>
         <script src='<?php $this->options->themeUrl(); ?>js/jquery-3.0.0.min.js' type='text/javascript'></script>
         <script src='<?php $this->options->themeUrl(); ?>js/jquery-migrate-3.0.0.min.js' type='text/javascript'></script>
         <script src='<?php $this->options->themeUrl(); ?>js/jquery-1.7.32.min.js'></script>
@@ -95,11 +96,15 @@
                     <div class='widget Header' data-version='1' id='Header1'>
                         <div id='header-inner'>
                             <div class='titlewrapper'>
+                                <?php if(empty($this->options->logoUrl)): ?>
                                 <h1 class='navbar-brand'><?php $this->options->title(); ?></h1>
+                                <?php else: ?>
+                                <img src="<?php echo $this->options->logoUrl ?>" height="34" alt="<?php $this->options->title(); ?>">
+                                <?php endif; ?>
                             </div>
                             <div class='descriptionwrapper'>
                                 <p class='description'>
-                                    <span></span>
+                                    <span><?php $this->description() ?></span>
                                 </p>
                             </div>
                         </div>
@@ -167,20 +172,20 @@
                     <div CLASS='full-width text-center caption mt-50'>
                         <h2><?php echo empty($this->options->welcome)?_t('Welcome!'):$this->options->welcome; ?></h2>
                         <h1 CLASS='cd-headline push'>
+                            <?php if(empty($this->options->headerText)): ?>
                             <span CLASS='blc'>I am</span>
                             <span CLASS='cd-words-wrapper'>
                                 <!-- ====== Header Text====== -->
-                                <?php if(empty($this->options->headerText)): ?>
                                 <b CLASS='is-visible'>Zane</b>
                                 <b>Web Designer</b>
                                 <b>Photography</b>
-                                <?php else:?>
-                                <?php echo $this->options->headerText ?>
-                                <?php endif; ?>
                             </span>
+                            <?php else:?>
+                            <?php echo $this->options->headerText ?>
+                            <?php endif; ?>
                         </h1>
                         <a CLASS='butn butn-bord mt-30' HREF='#blog' data-scroll-nav='3'>
-                            <span>浏览我的作品</span>
+                            <span>浏览我的文章</span>
                         </a>
                         <a CLASS='butn butn-light mt-30' HREF='#contact' data-scroll-nav='4'>
                             <span>聘请我！</span>

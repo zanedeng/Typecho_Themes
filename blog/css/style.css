@@ -1,3 +1,16 @@
+body::-webkit-scrollbar {
+    width: 5px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: #222;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #4e4e4e;    /* color of the scroll thumb */
+    border-radius: 5px;
+}
+
 /* ----------------------------------------------------------------
 == Table Of Content
 - Typography
@@ -757,6 +770,8 @@ h1 {
     font-size: 14px;
     font-family: 'Rubik', sans-serif;
     overflow-x: hidden !important;
+    scrollbar-width: thin;          /* "auto" or "thin" */
+    scrollbar-color: #4e4e4e #222;   /* scroll thumb and track */
     }
     h1, h2, h3, h4, h5, h6 {
     font-family: 'Josefin Sans', sans-serif;
@@ -1108,9 +1123,10 @@ h1 {
     display: inline-block;
     }
     .jumbo .caption h2 {
-    font-size: 70px;
+    font-size: 30px;
     font-weight: 300;
     letter-spacing: 4px;
+    color: #777;
     }
     .jumbo .caption h1 {
     margin: 15px 0;
@@ -1199,13 +1215,13 @@ h1 {
     font-size: 18px;
     margin-bottom: 10px;
     }
-    .about .content .social span {
+    .about .content .social .followMe {
     position: relative;
     padding-right: 50px;
     color: #c49b66;
     font-size: 12px;
     }
-    .about .content .social span:after {
+    .about .content .social .followMe:after {
     content: '';
     width: 40px;
     height: 1px;
@@ -1213,6 +1229,9 @@ h1 {
     position: absolute;
     right: 0;
     top: 50%;
+    }
+    .about .content .social .iconfont {
+
     }
     .about .content .social a {
     font-size: 12px;

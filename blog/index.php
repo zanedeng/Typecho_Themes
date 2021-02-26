@@ -67,25 +67,20 @@ $this->need('header.php');
                 <div CLASS='col-lg-4'>
                     <div CLASS='content'>
                         <?php if (empty($this->options->aboutText)): ?>
-                        <h6>Who am i</h6>
-                        <!-- About Section Heading -->
-                        <h4>Zane Deng.</h4>
-                        <!-- About Section Sub Heading -->
-                        <h5>Professional Web Designer</h5>
-                        <!-- About Section Content -->
-                        <p CLASS='mb-10'>Nulla metus metus ullamcorper vel tincidunt sed euismod nibh Quisque volutpat condimentum velit class aptent taciti sociosqu ad litora.</p>
-                        <p>Nulla metus metus ullamcorper vel tincidunt sed euismod nibh Quisque volutpat condimentum velit class aptent taciti sociosqu ad litora torquent metus metus ullamcorper vel tincidunt sed class aptent taciti sociosqu ad litora .</p>
+                            <h6>我的档案</h6>
+                            <h4>邓宗恒</h4>
+                            <h5>资深前端开发工程师</h5>
+                            <p CLASS='mb-10'>艺术设计类专业毕业，有很好的美术素养。</p>
+                            <p>爱编码</p>
                         <?php else: ?>
                         <?php echo $this->options->aboutText ?>
                         <?php endif; ?>
                         <div CLASS='social mt-40'>
-                            <span>Follow Me :</span>
+                            <span class='followMe'>关注我 :</span>
                             <!-- About Section Social Button -->
-                            <a HREF='#0'><i CLASS='fa fa-facebook'></i></a>
-                            <a HREF='#0'><i CLASS='fa fa-twitter'></i></a>
-                            <a HREF='#0'><i CLASS='fa fa-instagram'></i></a>
-                            <a HREF='#0'><i CLASS='fa fa-linkedin'></i></a>
-                            <a HREF='#0'><i CLASS='fa fa-behance'></i></a>
+                            <a HREF='<?php echo empty($this->options->socialgithub) ? '#0' : $this->options->socialgithub ?>'><span class="iconfont">&#xe605;</span></a>
+                            <a HREF='<?php echo empty($this->options->socialgitee) ? '#0' : $this->options->socialgitee ?>'><span class="iconfont">&#xe604;</span></a>
+                            <a HREF='<?php echo empty($this->options->socialcodepen) ? '#0' : $this->options->socialcodepen ?>'><span class="iconfont">&#xe606;</span></a>
                         </div>
                     </div>
                 </div>
@@ -101,37 +96,27 @@ $this->need('header.php');
                     <h4>SERVICES</h4>
                 </div>
                 <?php if(empty($this->options->services)): ?>
-                <div CLASS='col-lg-3 col-md-6'>
-                    <div CLASS='item mb-md50'>
-                        <!-- Services Section Icon -->
-                        <i CLASS='fa fa-pencil'></i>
-                        <!-- Services Section Title -->
-                        <h6>Web Design</h6>
-                        <!-- Services Section Content -->
-                        <p>Nulla metus metus ullamcorper vel tincidunt sed euismod nibh Quisque volutpat</p>
+                    <div CLASS='col-lg-4 col-md-6'>
+                        <div CLASS='item mb-md50'>
+                            <i CLASS='fa fa-file-audio-o'></i>
+                            <h6>JS音频转换器</h6>
+                            <p>免费的在线音频工具。采用HTML5和FFMPEG.JS技术，直接在浏览器转换。保护数据不会被窃取。无需等待，转换速度更快。流量开销更小。</p>
+                        </div>
                     </div>
-                </div>
-                <div CLASS='col-lg-3 col-md-6'>
-                    <div CLASS='item mb-md50'>
-                        <i CLASS='fa fa-codepen'></i>
-                        <h6>Development</h6>
-                        <p>Nulla metus metus ullamcorper vel tincidunt sed euismod nibh Quisque volutpat</p>
+                    <div CLASS='col-lg-4 col-md-6'>
+                        <div CLASS='item mb-md50'>
+                            <i CLASS='fa fa-file-movie-o'></i>
+                            <h6>视频转换工具</h6>
+                            <p>免费，在线，安全，快速的视频转码，剪切工具。采用HTML5和FFMPEG.JS技术，直接运行在浏览器里。视频文件不上传到服务器，节省时间，节省带宽，保证视频数据不被窃取。</p>
+                        </div>
                     </div>
-                </div>
-                <div CLASS='col-lg-3 col-md-6'>
-                    <div CLASS='item mb-sm50'>
-                        <i CLASS='fa fa-send-o'></i>
-                        <h6>Branding</h6>
-                        <p>Nulla metus metus ullamcorper vel tincidunt sed euismod nibh Quisque volutpat</p>
+                    <div CLASS='col-lg-4 col-md-6'>
+                        <div CLASS='item mb-sm50'>
+                            <i CLASS='fa fa-file-image-o'></i>
+                            <h6>PNG转ICO</h6>
+                            <p>一个免费的转换器。可以把你的PNG文件（也支持其他图片格式）转换成Windows ICO图标格式。ico图标格式可以用在软件中，或作为网站的图标（favicon.ico）显示在浏览器里。</p>
+                        </div>
                     </div>
-                </div>
-                <div CLASS='col-lg-3 col-md-6'>
-                    <div CLASS='item'>
-                        <i CLASS='fa fa-area-chart'></i>
-                        <h6>Marketing</h6>
-                        <p>Nulla metus metus ullamcorper vel tincidunt sed euismod nibh Quisque volutpat</p>
-                    </div>
-                </div>
                 <?php else: ?>
                 <?php echo $this->options->services; ?>
                 <?php endif; ?>

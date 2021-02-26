@@ -1,6 +1,32 @@
 body {
      background: #353535;
 }
+
+
+.search-form {
+    padding: 10px;
+    border-radius: 5px; 
+}
+
+.search-form .form-group {
+    position: relative; 
+}
+
+.search-form .form-group input {
+    padding-right: 50px;
+    font-size: 14px;
+    border: 1px solid #505050; 
+}
+
+.search-form .icon {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); 
+}
+
  .navbar, .nav-scroll {
      background: #161617;
 }
